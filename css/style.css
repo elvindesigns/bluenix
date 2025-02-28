@@ -1,0 +1,770 @@
+/* Load Poppins fonts */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    overflow-y: scroll; /* Single scrollbar on html */
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    /* cursor: none; */
+    margin: 0;
+    padding: 0;
+    min-height: 200vh; /* CHANGED: Ensures body height triggers snapping */
+    scroll-snap-type: y mandatory; /* CHANGED: Back to mandatory for strict snap */
+}
+
+/* Apply Poppins Light */
+.light {
+    font-weight: 300;
+}
+
+/* Apply Poppins Medium */
+.medium {
+    font-weight: 500;
+}
+
+/* Apply Poppins Bold */
+.bold {
+    font-weight: 700;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    scroll-snap-align: start;
+    cursor: none;
+}
+
+/* Second Section (Snap target) */
+.snap-section {
+
+    /* height: 100vh; */
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    scroll-snap-align: start;
+    background-color: white;
+    display: flex;
+    flex-direction: column; /* Stack top-row and container-fluid vertically */
+    align-items: center;
+    justify-content: flex-start; /* Start from top */
+    overflow: hidden;
+    cursor: auto;
+}
+
+.custom-padding {
+    max-width: 90%;
+}
+
+.introduction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Introduction Section Styling */
+/* .introduction {
+    margin-top: 100px; 
+} */
+
+.intro-subtitle {
+    color: rgb(122, 127, 133);
+    font-size: 1.5rem; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+
+.intro-title {
+    font-size: clamp(2.5rem, 8vw, 8rem); /* Scales between 2.5rem and 8rem based on viewport width */
+    line-height: 0.9em;
+    color: rgb(64, 126, 184);
+    font-weight: 700; /* Matches .bold class */
+    margin: 0;
+}
+
+.intro-title .highlight {
+    color: red;
+}
+
+.intro-text {
+    max-width: 400px;
+    color: rgb(138, 136, 136);
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+.intro-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .intro-title {
+        font-size: clamp(4rem, 6vw, 4rem); /* Smaller range for tablets/mobile */
+    }
+
+    .intro-text {
+        max-width: 100%; /* Full width on small screens */
+    }
+
+    .introduction .row {
+        flex-direction: column; /* Stack columns vertically */
+        text-align: center; /* Center text */
+    }
+
+    .intro-image {
+        margin-top: 20px; /* Space between text and image */
+    }
+}
+
+@media (max-width: 576px) {
+    .intro-title {
+        font-size: clamp(4rem, 5vw, 3rem); /* Even smaller for very small screens */
+    }
+}
+
+/* Subsequent sections (No snapping) */
+.page-section {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: white;
+    color: 1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    scroll-snap-align: none; /* Ensures no snapping after second section */
+}
+
+/* Underlay background */
+.bg-image-underlay {
+    background-image: url('../assets/images/landing_mask2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+/* Wrapper for masked content */
+.content-wrapper {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    -webkit-mask-image: radial-gradient(circle at var(--x, 50%) var(--y, 50%), transparent var(--radius-inner, 300px), black var(--radius-outer, 305px));
+    mask-image: radial-gradient(circle at var(--x, 50%) var(--y, 50%), transparent var(--radius-inner, 300px), black var(--radius-outer, 305px));
+}
+
+/* Main background */
+.bg-image {
+    background-image: url('../assets/images/landing_bg3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Cursor follower */
+.cursor-follower {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: all 0.1s ease-out;
+}
+
+/* Overlay to center content */
+.overlay {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Logo styling */
+.logo {
+    height: 200px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 0 20px;
+    max-width: 447px;
+}
+
+/* Underlay logo */
+.logo-underlay {
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Navigation styling */
+.navbar {
+    background: transparent !important;
+    padding: 1rem 0;
+    position: fixed;
+    z-index: 10;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    width: 100%;
+    max-width: 100%;
+    transition: background 0.3s ease, opacity 0.3s ease; /* Smooth fade */
+    cursor: auto;
+    opacity: 0; /* Hidden by default */
+    pointer-events: none; /* No interaction when hidden */
+}
+
+.navbar.visible {
+    opacity: 1; /* Fade in */
+    pointer-events: auto; /* Allow interaction */
+}
+
+.navbar.white-bg {
+    background: #ffffff !important;
+    border-bottom: #ececec 1px solid;
+}
+
+/* Container adjustments */
+.navbar .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center everything */
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+/* Centered content wrapper */
+.navbar-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between logo and nav */
+}
+
+/* Navbar Logo */
+.navbar-logo {
+    height: 40px; /* Adjust size as needed */
+    display: block;
+    opacity: 1;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth fade and scale */
+}
+
+.navbar.white-bg .navbar-logo {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Hamburger Menu */
+.navbar-toggler {
+    border: none; /* Remove default border */
+    padding: 0.5rem;
+    color: #354680;
+    outline: none; /* Remove outline */
+    position: absolute; /* Position on right */
+    right: 15px; /* Distance from right edge */
+}
+
+.navbar-toggler:focus {
+    outline: none; /* Ensure no outline on focus */
+    box-shadow: none; /* Remove focus shadow */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(53, 70, 128, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar.white-bg .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(53, 70, 128, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 1.5rem; /* Horizontal spacing on large screens */
+}
+
+/* Style nav-links */
+.nav-link {
+    color: rgb(53, 70, 128) !important;
+    font-size: 1.0rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #4382a7 !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) { /* Bootstrap's lg breakpoint */
+    .navbar-nav {
+        flex-direction: column; /* Stack items vertically */
+        gap: 0.5rem; /* Smaller gap for mobile */
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: 30px;
+        background-color: rgba(255, 255, 255, 0.95);
+        border-radius: 8px;
+    }
+
+    .nav-item {
+        width: 100%; /* Full width for each item */
+    }
+
+    .navbar-content {
+        flex-direction: column; /* Stack logo and nav on small screens */
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
+
+    .navbar.white-bg .navbar-collapse {
+        background-color: transparent;
+    }
+
+    .navbar-toggler {
+        display: block; /* Ensure visibility */
+    }
+}
+
+@media (min-width: 992px) { /* Ensure centering on wide screens */
+    .navbar-toggler {
+        display: none; /* Hide toggler on wide screens */
+    }
+
+    .navbar-collapse {
+        display: flex !important; /* Ensure nav stays visible */
+    }
+}
+
+/* Tagline styling */
+.tagline {
+    margin: 0;
+}
+
+/* Mouse scroll indicator */
+.mouse {
+    width: 50px;
+    height: 90px;
+    border: 1.8px solid #ffffff;
+    border-radius: 60px;
+    position: relative;
+    &::before {
+        content: '';
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #ffffff;
+        border-radius: 50%;
+        opacity: 1;
+        animation: wheel 2s infinite;
+        -webkit-animation: wheel 2s infinite;
+    }
+}
+
+@keyframes wheel {
+    to {
+        opacity: 0;
+        top: 60px;
+    }
+}
+
+@-webkit-keyframes wheel {
+    to {
+        opacity: 0;
+        top: 60px;
+    }
+}
+
+
+.top-row {
+    display: flex;
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
+    margin-bottom: 20px; /* Space below the row */
+}
+
+.top-item {
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.top-item.paint-calculator {
+    background-image: url('../assets/images/paint-calculator1.jpg');
+}
+.top-item.paint-calculator p {
+    color: #fff;
+    padding-top: 10px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.top-item.color-chart {
+    background-image: url('../assets/images/color-chart1.jpg');
+}
+.top-item.color-chart p {
+    color: #fff;
+    padding-top: 10px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.top-button {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.top-button:hover {
+    background-color: rgba(255, 255, 255, 1); /* Fully opaque on hover */
+}
+
+/* Slider Styling */
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; /* Space below the header row */
+}
+
+.header-row h1 {
+    margin: 0; /* Remove default margin from h1 */
+    font-size: 24px; /* Adjust size as needed */
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    /* max-width: 1200px;  */
+    margin: 20px auto;
+    overflow: hidden; /* Hide overflow */
+}
+
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    /* Remove width: calc(100% * 13 / 6); — now set via JS */
+}
+
+.slider-item {
+    flex: 0 0 250px; /* Fixed width instead of percentage */
+    max-width: 250px;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.slider-item>img {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 15px;
+    border-radius: 8px; /* Optional: rounded corners */
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+.slider-item:hover>img {
+    transform: scale(1.1); /* Scale up slightly on hover */
+}
+
+.slider-item .icon-class img{
+    width:30px;
+    height: 30px;
+    display: inline;
+    margin-right: 10px;
+}
+
+.slider-item p {
+    margin: 5px 0 0;
+    color: #101010; /* Match your text-white class */
+}
+
+/* Navigation Buttons */
+.slider-controls {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+.slider-prev, .slider-next {
+    background-color: #fff; /* Optional: Button styling */
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-prev:hover, .slider-next:hover {
+    background-color: #f0f0f0; /* Optional: Hover effect */
+}
+
+/* Optional: Disable buttons when at limits */
+.slider-prev.disabled, .slider-next.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Image Section Styling */
+.image-section {
+    width: 90%;
+    background-image: url('../assets/images/emulsion.jpg');
+    background-size: contain; /* Full image visible, scaled proportionally */
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin-top: 50px;
+    height: 0; /* Remove fixed height */
+    padding-bottom: calc(100vw*(364.5/1147)); /* Aspect ratio (e.g., 16:9 = 9/16 * 100%) */
+    /* padding-bottom: 56.25%; */
+}
+
+
+.why-us{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+
+.why-us .item{
+    margin-bottom: 50px;
+}
+.why-us .item img{
+    width: 50px;
+    opacity: 0.2;
+    margin-bottom: 15px;
+}
+
+.why-us .left-side{
+    text-align: right;
+}
+.why-us .right-side{
+    text-align: left;
+}
+
+.why-us h3{
+    color: rgb(64, 126, 184);
+}
+.why-us p{
+    color: rgb(71, 71, 71);
+}
+
+/* Footer Section Styling */
+.footer-section {
+    width: 100%;
+    background-color: #1a1a1a; /* Dark background, adjust as needed */
+    color: #ffffff;
+    padding: 100px 0;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    max-width: 1800px; /* Match snap-section max-width */
+    margin: 0 auto;
+    padding: 0 15px; /* Match Bootstrap container padding */
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px; /* Minimum width for columns */
+    margin: 20px 0; /* Vertical spacing for wrapping */
+}
+
+.footer-logo {
+    width: 180px; /* Adjust logo size */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Space between icons */
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease; /* Hover effect */
+}
+
+.social-icon:hover img {
+    transform: scale(1.2); /* Slight scale on hover */
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #4382a7; /* Match nav-link hover color */
+}
+
+.footer-column p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .footer-row {
+        flex-direction: column; /* Stack columns on small screens */
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+
+/* Scrolling Text Section Styling */
+.scrolling-text-section {
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.scrolling-text-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.scrolling-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 40s linear infinite; /* Slower scroll */
+}
+.scrolling-text span img{
+    display: inline-block;
+    width: 20px;
+    margin-right: 15px;
+    opacity: 0.5;
+}
+
+.scrolling-text span {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #366caa;
+    margin: 0 60px; /* Spacing between items */
+    display: inline-block;
+}
+
+/* Seamless scrolling animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-33.33%); /* Move 1/3 of total width (3 sets) */
+    }
+}
