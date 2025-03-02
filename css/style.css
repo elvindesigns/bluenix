@@ -36,8 +36,8 @@ body {
     /* cursor: none; */
     margin: 0;
     padding: 0;
-    min-height: 200vh; /* CHANGED: Ensures body height triggers snapping */
-    scroll-snap-type: y mandatory; /* CHANGED: Back to mandatory for strict snap */
+    /* min-height: 200vh;  */
+    /* scroll-snap-type: y mandatory;  */
 }
 
 /* Apply Poppins Light */
@@ -72,7 +72,7 @@ body {
     max-width: 100%;
     margin: 0 auto;
     position: relative;
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
     background-color: white;
     display: flex;
     flex-direction: column; /* Stack top-row and container-fluid vertically */
@@ -264,7 +264,7 @@ body {
     max-width: 100%;
     transition: background 0.3s ease, opacity 0.3s ease; /* Smooth fade */
     cursor: auto;
-    opacity: 0; /* Hidden by default */
+    opacity: 0;
     pointer-events: none; /* No interaction when hidden */
 }
 
@@ -445,7 +445,7 @@ body {
 .top-row {
     display: flex;
     width: 100%;
-    height: 500px; /* Adjust height as needed */
+    /* height: 500px;  */
     margin-bottom: 20px; /* Space below the row */
 }
 
@@ -463,22 +463,52 @@ body {
 
 .top-item.paint-calculator {
     background-image: url('../assets/images/paint-calculator1.jpg');
+    padding: 20px;
+    min-height: 500px;
 }
 .top-item.paint-calculator p {
-    color: #fff;
+    color: #303030;
     padding-top: 10px;
     max-width: 250px;
-    text-align: center;
+    text-align: left;
+}
+.top-item.paint-calculator .info {
+    /* height: 100%; */
+    padding: 35px;
+    background-color: #e5ecf1dc;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.top-item.paint-calculator h3 {
+    color: #4177be;
 }
 
 .top-item.color-chart {
-    background-image: url('../assets/images/color-chart1.jpg');
+    background-image: url('../assets/images/color-chart.jpg');
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    min-height: 500px;
+}
+.top-item.color-chart .info {
+    /* height: 100%; */
+    padding: 35px;
+    background-color: #e5ecf1ea;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.top-item.color-chart h3 {
+    color: #4177be;
 }
 .top-item.color-chart p {
-    color: #fff;
+    color: #303030;
     padding-top: 10px;
     max-width: 250px;
-    text-align: center;
+    text-align: left;
 }
 
 .top-button {
@@ -492,6 +522,8 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
+    color: #1a1a1a;
 }
 
 .top-button:hover {
@@ -525,6 +557,9 @@ body {
     display: flex;
     transition: transform 0.5s ease;
     /* Remove width: calc(100% * 13 / 6); — now set via JS */
+}
+.slider-wrapper a{
+   text-decoration: none;
 }
 
 .slider-item {
@@ -639,7 +674,7 @@ body {
     width: 100%;
     background-color: #1a1a1a; /* Dark background, adjust as needed */
     color: #ffffff;
-    padding: 100px 0;
+    padding: 100px 0 20px;
 }
 
 .footer-row {
@@ -712,6 +747,22 @@ body {
     margin: 0;
 }
 
+/* Copyright Section Styling */
+.copyright-section {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px; /* Space above copyright */
+    padding-top: 20px; /* Space between columns and copyright */
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle divider */
+}
+
+.copyright-section p {
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0;
+    opacity: 0.8; /* Slightly faded for subtlety */
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .footer-row {
@@ -767,4 +818,135 @@ body {
     100% {
         transform: translateX(-33.33%); /* Move 1/3 of total width (3 sets) */
     }
+}
+
+
+.desc-section{
+    background-image:  url('../assets/images/color-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.color-desc{
+    padding-top: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.color-desc h4{
+    font-size: 30px;
+}
+
+.color-desc .desc{
+    font-size: 14px;
+    color: #9c9c9c;
+    max-width: 400px;
+}
+.color-desc .tip-hint{
+    color: #9c9c9c;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f8f8;
+    border: 1.5px solid #eee;
+    border-radius: 12px;
+    padding: 4px 24px;
+    max-width: 445px;
+    height: 88px;
+    margin-bottom: 40px;
+}
+.color-desc .tip-hint p{
+    margin-bottom: 0;
+}
+.color-desc .tip-hint img{
+    width: 50px;
+}
+
+.filter-section {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically within its height */
+    margin: 50px auto 0; /* Center with auto margins, 50px top margin */
+    max-width: 500px; /* Keep your max-width */
+    gap: 15px; /* Space between items */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+.filter-section p {
+    margin: 0; /* Remove default margin */
+    font-family: 'Poppins', sans-serif;
+}
+
+.filter-section a {
+    text-decoration: none;
+    color: #4382a7; /* Match your nav-link hover color, adjust as needed */
+}
+
+.filter-section a:hover {
+    text-decoration: underline; /* Optional hover effect */
+}
+
+.filter-section input {
+    max-width: 200px; /* Keep your max-width */
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* Color Grid and Card Styling */
+.color-grid {
+ 
+    justify-content: center;
+}
+
+.card-holder {
+    padding: 10px; /* Add some padding around cards */
+}
+
+.color-card {
+    width: 100%;
+    height: 420px; /* Fixed height for consistency */
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Optional hover effect */
+}
+
+/* Effect Images */
+.color-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 30px;
+    object-fit: contain; /* Ensure images fill the card */
+    pointer-events: none; /* Allow clicks to pass through */
+}
+
+.shadow-effect {
+    mix-blend-mode: multiply; /* Darkens the base color */
+}
+
+.highlight-effect {
+    mix-blend-mode: screen; /* Lightens the base color (linear add alternative) */
+}
+
+.color-card-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+
+}
+
+.color-card-text p {
+    margin: 0;
+    font-size: 13px;
+}
+
+.color-card-text .bold {
+    font-weight: 500;
+    font-size: 16px;
 }

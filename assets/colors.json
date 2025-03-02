@@ -1,0 +1,1250 @@
+[
+  {
+    "name": "Oyster white",
+    "color": "#e1dac7",
+    "id": "RAL 1013",
+    "description": "A soft, creamy white with a hint of warmth, perfect for serene and inviting spaces."
+  },
+  {
+    "name": "Traffic white",
+    "color": "#f0f1ea",
+    "id": "RAL 9016",
+    "description": "A crisp, clean white that brightens any room with its pure, radiant glow."
+  },
+  {
+    "name": "Grey white",
+    "color": "#d6d5cb",
+    "id": "RAL 9002",
+    "description": "A subtle, neutral white with a grey undertone, ideal for modern minimalist designs."
+  },
+  {
+    "name": "Signal white",
+    "color": "#ecece7",
+    "id": "RAL 9003",
+    "description": "A bright, versatile white that adds freshness and simplicity to any setting."
+  },
+  {
+    "name": "Pure white",
+    "color": "#f0ede1",
+    "id": "RAL 9010",
+    "description": "With our cool, bright, warm, and off-white options, picking the perfect white is a piece of cake."
+  },
+  {
+    "name": "Papyrus white",
+    "color": "#c7cbc4",
+    "id": "RAL 9018",
+    "description": "A muted white with a touch of green-grey, great for understated elegance."
+  },
+  {
+    "name": "Honey yellow",
+    "color": "#c58f00",
+    "id": "RAL 1005",
+    "description": "A rich, golden yellow that brings warmth and sweetness to cozy interiors."
+  },
+  {
+    "name": "Green beige",
+    "color": "#c9bb88",
+    "id": "RAL 1000",
+    "description": "A earthy beige with green hints, blending nature’s calm into your space."
+  },
+  {
+    "name": "Beige",
+    "color": "#ccb083",
+    "id": "RAL 1001",
+    "description": "A classic beige that offers a soft, neutral backdrop for timeless decor."
+  },
+  {
+    "name": "Pearl beige",
+    "color": "#8e8370",
+    "id": "RAL 1035",
+    "description": "A sophisticated beige with a pearly sheen, perfect for subtle luxury."
+  },
+  {
+    "name": "Maize yellow",
+    "color": "#db9100",
+    "id": "RAL 1006",
+    "description": "A vibrant, corn-inspired yellow that energizes any room with bold cheer."
+  },
+  {
+    "name": "Ivory",
+    "color": "#d9c59a",
+    "id": "RAL 1014",
+    "description": "A warm, creamy ivory that adds a touch of elegance to classic interiors."
+  },
+  {
+    "name": "Zinc yellow",
+    "color": "#f2cb2e",
+    "id": "RAL 1018",
+    "description": "A bright, metallic yellow that shines with modern, industrial flair."
+  },
+  {
+    "name": "Grey beige",
+    "color": "#a28f7a",
+    "id": "RAL 1019",
+    "description": "A grounded beige with grey tones, ideal for a calm, neutral palette."
+  },
+  {
+    "name": "Sand yellow",
+    "color": "#cdaa6d",
+    "id": "RAL 1002",
+    "description": "A sunny, sandy yellow that evokes the warmth of a desert breeze."
+  },
+  {
+    "name": "Signal yellow",
+    "color": "#f2a900",
+    "id": "RAL 1003",
+    "description": "A bold, attention-grabbing yellow perfect for lively accent walls."
+  },
+  {
+    "name": "Daffodil yellow",
+    "color": "#e28d00",
+    "id": "RAL 1007",
+    "description": "A cheerful, flower-inspired yellow that brightens any space with joy."
+  },
+  {
+    "name": "Brown beige",
+    "color": "#ab814f",
+    "id": "RAL 1011",
+    "description": "A rich beige with brown depth, adding earthy comfort to cozy rooms."
+  },
+  {
+    "name": "Light ivory",
+    "color": "#e3d3b5",
+    "id": "RAL 1015",
+    "description": "A delicate ivory that softens spaces with its gentle, warm hue."
+  },
+  {
+    "name": "Sulphur yellow",
+    "color": "#e8de35",
+    "id": "RAL 1016",
+    "description": "A zesty, bright yellow that radiates energy and optimism."
+  },
+  {
+    "name": "Olive yellow",
+    "color": "#9d8f65",
+    "id": "RAL 1020",
+    "description": "A muted yellow with olive tones, blending nature into subtle decor."
+  },
+  {
+    "name": "Rape yellow",
+    "color": "#eeb700",
+    "id": "RAL 1021",
+    "description": "A vivid, mustard-like yellow that adds a splash of bold vibrancy."
+  },
+  {
+    "name": "Golden yellow",
+    "color": "#dd9f00",
+    "id": "RAL 1004",
+    "description": "A luxurious golden hue that shines with regal warmth."
+  },
+  {
+    "name": "Ochre yellow",
+    "color": "#b5904b",
+    "id": "RAL 1024",
+    "description": "An earthy ochre yellow that brings rustic charm to any space."
+  },
+  {
+    "name": "Lemon yellow",
+    "color": "#d6b025",
+    "id": "RAL 1012",
+    "description": "A tangy, citrusy yellow that refreshes with its lively zest."
+  },
+  {
+    "name": "Luminous yellow",
+    "color": "#ffff00",
+    "id": "RAL 1026",
+    "description": "A dazzling, neon yellow that glows with striking brilliance."
+  },
+  {
+    "name": "Saffron yellow",
+    "color": "#f0aa50",
+    "id": "RAL 1017",
+    "description": "A spicy, saffron-inspired yellow that warms up any room."
+  },
+  {
+    "name": "Curry",
+    "color": "#a2800c",
+    "id": "RAL 1027",
+    "description": "A deep, spiced yellow that adds a flavorful twist to interiors."
+  },
+  {
+    "name": "Traffic yellow",
+    "color": "#efb700",
+    "id": "RAL 1023",
+    "description": "A high-visibility yellow that commands attention with its boldness."
+  },
+  {
+    "name": "Melon yellow",
+    "color": "#ff9c00",
+    "id": "RAL 1028",
+    "description": "A juicy, melon-toned yellow that bursts with playful energy."
+  },
+  {
+    "name": "Traffic black",
+    "color": "#2a292a",
+    "id": "RAL 9017",
+    "description": "A sleek, deep black that anchors spaces with modern sophistication."
+  },
+  {
+    "name": "Cream",
+    "color": "#e7e1d2",
+    "id": "RAL 9001",
+    "description": "A smooth, creamy shade that softens rooms with subtle warmth."
+  },
+  {
+    "name": "Chrome green",
+    "color": "#36422f",
+    "id": "RAL 6020",
+    "description": "A rich, metallic green that adds a bold, industrial edge."
+  },
+  {
+    "name": "Pebble grey",
+    "color": "#b4b0a1",
+    "id": "RAL 7032",
+    "description": "A soft, pebbly grey that brings calm neutrality to any space."
+  },
+  {
+    "name": "Cement grey",
+    "color": "#7e8274",
+    "id": "RAL 7033",
+    "description": "A sturdy grey with earthy tones, perfect for grounded designs."
+  },
+  {
+    "name": "Jet black",
+    "color": "#0e0e10",
+    "id": "RAL 9005",
+    "description": "A profound black that envelops spaces in dramatic elegance."
+  },
+  {
+    "name": "White aluminium",
+    "color": "#a1a1a0",
+    "id": "RAL 9006",
+    "description": "A metallic white-grey that shines with sleek, modern flair."
+  },
+  {
+    "name": "Steel blue",
+    "color": "#1e2b3d",
+    "id": "RAL 5011",
+    "description": "A deep, steely blue that adds strength and calm to interiors."
+  },
+  {
+    "name": "Wine red",
+    "color": "#58181f",
+    "id": "RAL 3005",
+    "description": "A rich, wine-like red that infuses spaces with luxurious depth."
+  },
+  {
+    "name": "Beige brown",
+    "color": "#765038",
+    "id": "RAL 8024",
+    "description": "A warm beige-brown that blends comfort with earthy charm."
+  },
+  {
+    "name": "Light blue",
+    "color": "#2e88b6",
+    "id": "RAL 5012",
+    "description": "A breezy light blue that lifts rooms with airy freshness."
+  },
+  {
+    "name": "Tomato red",
+    "color": "#952e25",
+    "id": "RAL 3013",
+    "description": "A ripe, tomato-red hue that energizes with its bold vibrancy."
+  },
+  {
+    "name": "Cobalt blue",
+    "color": "#223053",
+    "id": "RAL 5013",
+    "description": "A deep cobalt blue that evokes serene, oceanic depths."
+  },
+  {
+    "name": "Pure orange",
+    "color": "#de5306",
+    "id": "RAL 2004",
+    "description": "A pure, fiery orange that ignites spaces with vivid warmth."
+  },
+  {
+    "name": "Signal red",
+    "color": "#982323",
+    "id": "RAL 3001",
+    "description": "A striking red that signals energy and passion in any room."
+  },
+  {
+    "name": "Salmon orange",
+    "color": "#d1654e",
+    "id": "RAL 2012",
+    "description": "A soft salmon orange that blends warmth with subtle charm."
+  },
+  {
+    "name": "Coral red",
+    "color": "#a43c30",
+    "id": "RAL 3016",
+    "description": "A vibrant coral red that adds a tropical flair to decor."
+  },
+  {
+    "name": "Pastel yellow",
+    "color": "#e69d51",
+    "id": "RAL 1034",
+    "description": "A gentle pastel yellow that softens spaces with sunny calm."
+  },
+  {
+    "name": "Luminous orange",
+    "color": "#ff4b11",
+    "id": "RAL 2005",
+    "description": "A glowing orange that radiates with eye-catching intensity."
+  },
+  {
+    "name": "Light pink",
+    "color": "#d7a0a6",
+    "id": "RAL 3015",
+    "description": "A delicate pink that brings a blush of warmth to serene rooms."
+  },
+  {
+    "name": "Red orange",
+    "color": "#b6481c",
+    "id": "RAL 2001",
+    "description": "A bold red-orange that fuses fiery energy with earthy tones."
+  },
+  {
+    "name": "Luminous b't orange",
+    "color": "#ffb700",
+    "id": "RAL 2007",
+    "description": "A brilliant orange that shines with radiant, sunny vibrance."
+  },
+  {
+    "name": "Light grey",
+    "color": "#c5c7c4",
+    "id": "RAL 7035",
+    "description": "A soft light grey that offers a clean, versatile backdrop."
+  },
+  {
+    "name": "Platinum grey",
+    "color": "#979392",
+    "id": "RAL 7036",
+    "description": "A refined grey with a metallic edge, ideal for chic spaces."
+  },
+  {
+    "name": "Dusty grey",
+    "color": "#7a7b7a",
+    "id": "RAL 7037",
+    "description": "A muted, dusty grey that adds a subtle, timeless depth."
+  },
+  {
+    "name": "Window grey",
+    "color": "#989ea1",
+    "id": "RAL 7040",
+    "description": "A cool grey that frames spaces with understated elegance."
+  },
+  {
+    "name": "Traffic grey A",
+    "color": "#8e9291",
+    "id": "RAL 7042",
+    "description": "A practical grey that balances neutrality with modern appeal."
+  },
+  {
+    "name": "Traffic grey B",
+    "color": "#4f5250",
+    "id": "RAL 7043",
+    "description": "A deeper grey that grounds rooms with steady sophistication."
+  },
+  {
+    "name": "Tele grey 2",
+    "color": "#7f868a",
+    "id": "RAL 7046",
+    "description": "A smooth grey that blends seamlessly into tech-inspired decor."
+  },
+  {
+    "name": "Tele grey 4",
+    "color": "#c8c8c7",
+    "id": "RAL 7047",
+    "description": "A light, airy grey that lifts spaces with subtle brightness."
+  },
+  {
+    "name": "Pearl mouse grey",
+    "color": "#807b73",
+    "id": "RAL 7048",
+    "description": "A pearly grey with a soft sheen, perfect for cozy elegance."
+  },
+  {
+    "name": "Signal brown",
+    "color": "#774d3e",
+    "id": "RAL 8002",
+    "description": "A warm brown that signals earthy richness and comfort."
+  },
+  {
+    "name": "Clay brown",
+    "color": "#7c4b27",
+    "id": "RAL 8003",
+    "description": "A deep clay brown that adds rustic depth to any room."
+  },
+  {
+    "name": "Copper brown",
+    "color": "#8a4931",
+    "id": "RAL 8004",
+    "description": "A coppery brown that glows with metallic warmth."
+  },
+  {
+    "name": "Nut brown",
+    "color": "#583827",
+    "id": "RAL 8011",
+    "description": "A nutty brown that brings grounded, natural tones indoors."
+  },
+  {
+    "name": "Red brown",
+    "color": "#64332b",
+    "id": "RAL 8012",
+    "description": "A red-tinged brown that warms spaces with subtle intensity."
+  },
+  {
+    "name": "Sepia brown",
+    "color": "#483526",
+    "id": "RAL 8014",
+    "description": "A vintage sepia brown that evokes classic, timeless charm."
+  },
+  {
+    "name": "Chocolate brown",
+    "color": "#432f29",
+    "id": "RAL 8017",
+    "description": "A deep chocolate brown that indulges rooms in rich comfort."
+  },
+  {
+    "name": "Grey brown",
+    "color": "#3d3635",
+    "id": "RAL 8019",
+    "description": "A grey-brown hybrid that balances neutrality with warmth."
+  },
+  {
+    "name": "Black brown",
+    "color": "#1a1719",
+    "id": "RAL 8022",
+    "description": "A near-black brown that adds mysterious depth to decor."
+  },
+  {
+    "name": "Raspberry red",
+    "color": "#a9263d",
+    "id": "RAL 3027",
+    "description": "A juicy raspberry red that bursts with playful vibrancy."
+  },
+  {
+    "name": "Pure red",
+    "color": "#c92b26",
+    "id": "RAL 3028",
+    "description": "A pure, fiery red that ignites spaces with bold passion."
+  },
+  {
+    "name": "Black red",
+    "color": "#3d2022",
+    "id": "RAL 3007",
+    "description": "A dark red-black that adds a moody, dramatic flair."
+  },
+  {
+    "name": "Red lilac",
+    "color": "#836083",
+    "id": "RAL 4001",
+    "description": "A lilac-red blend that softens spaces with subtle charm."
+  },
+  {
+    "name": "Red violet",
+    "color": "#8c3c4b",
+    "id": "RAL 4002",
+    "description": "A rich red-violet that fuses warmth with regal tones."
+  },
+  {
+    "name": "Antique pink",
+    "color": "#c97375",
+    "id": "RAL 3014",
+    "description": "A vintage pink that adds a nostalgic blush to interiors."
+  },
+  {
+    "name": "Traffic purple",
+    "color": "#913073",
+    "id": "RAL 4006",
+    "description": "A bold purple that commands attention with vibrant energy."
+  },
+  {
+    "name": "Purple violet",
+    "color": "#47243c",
+    "id": "RAL 4007",
+    "description": "A deep violet that envelops spaces in luxurious mystery."
+  },
+  {
+    "name": "Traffic red",
+    "color": "#b81d13",
+    "id": "RAL 3020",
+    "description": "A high-impact red that energizes with its vivid presence."
+  },
+  {
+    "name": "Pearl violet",
+    "color": "#716287",
+    "id": "RAL 4011",
+    "description": "A pearly violet that shimmers with elegant sophistication."
+  },
+  {
+    "name": "Pearl blackberry",
+    "color": "#6d6b7f",
+    "id": "RAL 4012",
+    "description": "A blackberry pearl that blends dark depth with subtle shine."
+  },
+  {
+    "name": "Broom yellow",
+    "color": "#dba400",
+    "id": "RAL 1032",
+    "description": "A sunny broom yellow that sweeps spaces with cheerful warmth."
+  },
+  {
+    "name": "Sapphire blue",
+    "color": "#263855",
+    "id": "RAL 5003",
+    "description": "A gem-like sapphire blue that adds cool, jewel-toned depth."
+  },
+  {
+    "name": "Black blue",
+    "color": "#1a1e28",
+    "id": "RAL 5004",
+    "description": "A near-black blue that cloaks rooms in striking elegance."
+  },
+  {
+    "name": "Pigeon blue",
+    "color": "#687c96",
+    "id": "RAL 5014",
+    "description": "A soft pigeon blue that soothes with its gentle calm."
+  },
+  {
+    "name": "Azure blue",
+    "color": "#2d5e78",
+    "id": "RAL 5009",
+    "description": "A clear azure blue that evokes tranquil skies and seas."
+  },
+  {
+    "name": "Gentian blue",
+    "color": "#004e7c",
+    "id": "RAL 5010",
+    "description": "A vivid gentian blue that refreshes with bold coolness."
+  },
+  {
+    "name": "Sky blue",
+    "color": "#0b7bb0",
+    "id": "RAL 5015",
+    "description": "A bright sky blue that lifts spaces with airy vibrance."
+  },
+  {
+    "name": "Pearl gold",
+    "color": "#7d653f",
+    "id": "RAL 1036",
+    "description": "A golden pearl that glows with rich, opulent warmth."
+  },
+  {
+    "name": "Purple red",
+    "color": "#691b23",
+    "id": "RAL 3004",
+    "description": "A deep purple-red that melds mystery with passionate hues."
+  },
+  {
+    "name": "Vermilion",
+    "color": "#bc3823",
+    "id": "RAL 2002",
+    "description": "A fiery vermilion that blazes with intense, vivid energy."
+  },
+  {
+    "name": "Pastel orange",
+    "color": "#f17829",
+    "id": "RAL 2003",
+    "description": "A soft pastel orange that warms spaces with gentle vibrance."
+  },
+  {
+    "name": "Beige red",
+    "color": "#c2856d",
+    "id": "RAL 3012",
+    "description": "A beige-red blend that softens rooms with earthy charm."
+  },
+  {
+    "name": "Bright red orange",
+    "color": "#e86b22",
+    "id": "RAL 2008",
+    "description": "A dazzling red-orange that radiates with spirited brightness."
+  },
+  {
+    "name": "Traffic orange",
+    "color": "#da530a",
+    "id": "RAL 2009",
+    "description": "A bold traffic orange that grabs attention with fiery zest."
+  },
+  {
+    "name": "Rose",
+    "color": "#c8545d",
+    "id": "RAL 3017",
+    "description": "A rosy hue that blooms with delicate, romantic warmth."
+  },
+  {
+    "name": "Pearl orange",
+    "color": "#8f3e26",
+    "id": "RAL 2013",
+    "description": "A pearly orange that shimmers with subtle sophistication."
+  },
+  {
+    "name": "Flame red",
+    "color": "#a42821",
+    "id": "RAL 3000",
+    "description": "A blazing flame red that ignites spaces with fierce energy."
+  },
+  {
+    "name": "Signal orange",
+    "color": "#cc5d29",
+    "id": "RAL 2010",
+    "description": "A striking signal orange that alerts with vibrant warmth."
+  },
+  {
+    "name": "Carmine red",
+    "color": "#982222",
+    "id": "RAL 3002",
+    "description": "A deep carmine red that envelops rooms in rich intensity."
+  },
+  {
+    "name": "Ruby red",
+    "color": "#841922",
+    "id": "RAL 3003",
+    "description": "A ruby-inspired red that sparkles with luxurious depth."
+  },
+  {
+    "name": "Dahlia yellow",
+    "color": "#f39b1b",
+    "id": "RAL 1033",
+    "description": "A dahlia yellow that blooms with cheerful, sunny vibrance."
+  },
+  {
+    "name": "Oxide red",
+    "color": "#663029",
+    "id": "RAL 3009",
+    "description": "A rusty oxide red that adds weathered, earthy charm."
+  },
+  {
+    "name": "Brown red",
+    "color": "#772424",
+    "id": "RAL 3011",
+    "description": "A brown-red mix that warms spaces with grounded intensity."
+  },
+  {
+    "name": "Yellow orange",
+    "color": "#d56f00",
+    "id": "RAL 2000",
+    "description": "A zesty yellow-orange that fuses sunshine with fiery zest."
+  },
+  {
+    "name": "Agate grey",
+    "color": "#afb1a9",
+    "id": "RAL 7038",
+    "description": "A smooth agate grey that calms with its neutral elegance."
+  },
+  {
+    "name": "Traffic blue",
+    "color": "#005a8c",
+    "id": "RAL 5017",
+    "description": "A bold traffic blue that directs attention with cool vibrance."
+  },
+  {
+    "name": "Turquoise blue",
+    "color": "#1b8b8c",
+    "id": "RAL 5018",
+    "description": "A turquoise blue that refreshes with tropical clarity."
+  },
+  {
+    "name": "Silk grey",
+    "color": "#b6b3a8",
+    "id": "RAL 7044",
+    "description": "A silky grey that drapes spaces in soft, neutral luxury."
+  },
+  {
+    "name": "Night blue",
+    "color": "#2b2c5a",
+    "id": "RAL 5022",
+    "description": "A deep night blue that cloaks rooms in starry calm."
+  },
+  {
+    "name": "Distant blue",
+    "color": "#4a688d",
+    "id": "RAL 5023",
+    "description": "A distant blue that evokes serene, far-off horizons."
+  },
+  {
+    "name": "Green brown",
+    "color": "#866a3e",
+    "id": "RAL 8000",
+    "description": "A green-brown blend that roots spaces in natural warmth."
+  },
+  {
+    "name": "Patina green",
+    "color": "#3b7460",
+    "id": "RAL 6000",
+    "description": "A patina green that ages gracefully with vintage charm."
+  },
+  {
+    "name": "Emerald green",
+    "color": "#316834",
+    "id": "RAL 6001",
+    "description": "A lush emerald green that sparkles with forest richness."
+  },
+  {
+    "name": "Fawn brown",
+    "color": "#6d462b",
+    "id": "RAL 8007",
+    "description": "A fawn brown that softens rooms with gentle earthiness."
+  },
+  {
+    "name": "Moss green",
+    "color": "#114232",
+    "id": "RAL 6005",
+    "description": "A deep moss green that blankets spaces in natural calm."
+  },
+  {
+    "name": "Grey olive",
+    "color": "#3b392e",
+    "id": "RAL 6006",
+    "description": "A grey-olive mix that grounds rooms with muted depth."
+  },
+  {
+    "name": "Chestnut brown",
+    "color": "#5d2f27",
+    "id": "RAL 8015",
+    "description": "A chestnut brown that warms with its rich, nutty hue."
+  },
+  {
+    "name": "Grass green",
+    "color": "#486f38",
+    "id": "RAL 6010",
+    "description": "A vibrant grass green that energizes with lively freshness."
+  },
+  {
+    "name": "Reseda green",
+    "color": "#697d58",
+    "id": "RAL 6011",
+    "description": "A soft reseda green that calms with its earthy tone."
+  },
+  {
+    "name": "Orange brown",
+    "color": "#a05729",
+    "id": "RAL 8023",
+    "description": "An orange-brown hybrid that glows with spiced warmth."
+  },
+  {
+    "name": "Black olive",
+    "color": "#3c3d36",
+    "id": "RAL 6015",
+    "description": "A dark olive that adds a mysterious, natural depth."
+  },
+  {
+    "name": "Turquoise green",
+    "color": "#006a4c",
+    "id": "RAL 6016",
+    "description": "A bold turquoise green that refreshes with cool vibrance."
+  },
+  {
+    "name": "Olive drab",
+    "color": "#393327",
+    "id": "RAL 6022",
+    "description": "A muted olive drab that blends ruggedness with calm."
+  },
+  {
+    "name": "Traffic green",
+    "color": "#008450",
+    "id": "RAL 6024",
+    "description": "A striking traffic green that directs with vivid energy."
+  },
+  {
+    "name": "Fern green",
+    "color": "#5a6e3b",
+    "id": "RAL 6025",
+    "description": "A fern-inspired green that soothes with natural elegance."
+  },
+  {
+    "name": "Pale brown",
+    "color": "#735847",
+    "id": "RAL 8025",
+    "description": "A pale brown that softens spaces with earthy subtlety."
+  },
+  {
+    "name": "Terra brown",
+    "color": "#4f3a2a",
+    "id": "RAL 8028",
+    "description": "A terra-cotta brown that grounds rooms with rustic charm."
+  },
+  {
+    "name": "Pearl copper",
+    "color": "#7d4031",
+    "id": "RAL 8029",
+    "description": "A coppery pearl that shimmers with warm sophistication."
+  },
+  {
+    "name": "Granite grey",
+    "color": "#384345",
+    "id": "RAL 7026",
+    "description": "A granite grey that adds rugged, neutral strength."
+  },
+  {
+    "name": "Stone grey",
+    "color": "#918e85",
+    "id": "RAL 7030",
+    "description": "A stone-like grey that calms with its natural tone."
+  },
+  {
+    "name": "Blue grey",
+    "color": "#5d686d",
+    "id": "RAL 7031",
+    "description": "A cool blue-grey that blends serenity with modern appeal."
+  },
+  {
+    "name": "Signal black",
+    "color": "#2b2b2c",
+    "id": "RAL 9004",
+    "description": "A bold signal black that defines spaces with stark elegance."
+  },
+  {
+    "name": "Grey aluminium",
+    "color": "#868581",
+    "id": "RAL 9007",
+    "description": "A metallic grey that shines with industrial sleekness."
+  },
+  {
+    "name": "Graphite black",
+    "color": "#27292b",
+    "id": "RAL 9011",
+    "description": "A graphite black that adds a polished, dark depth."
+  },
+  {
+    "name": "Pearl light grey",
+    "color": "#858583",
+    "id": "RAL 9022",
+    "description": "A light grey pearl that glows with subtle refinement."
+  },
+  {
+    "name": "Pearl dark grey",
+    "color": "#797b7b",
+    "id": "RAL 9023",
+    "description": "A dark grey pearl that softens with pearly elegance."
+  },
+  {
+    "name": "Capri blue",
+    "color": "#0f5d84",
+    "id": "RAL 5019",
+    "description": "A capri blue that refreshes with its cool, coastal vibe."
+  },
+  {
+    "name": "Ocean blue",
+    "color": "#00414b",
+    "id": "RAL 5020",
+    "description": "A deep ocean blue that plunges spaces into serene depths."
+  },
+  {
+    "name": "Water blue",
+    "color": "#007577",
+    "id": "RAL 5021",
+    "description": "A clear water blue that ripples with tranquil freshness."
+  },
+  {
+    "name": "Pastel blue",
+    "color": "#6792ac",
+    "id": "RAL 5024",
+    "description": "A gentle pastel blue that soothes with soft coolness."
+  },
+  {
+    "name": "Pearl gentian blue",
+    "color": "#2c697c",
+    "id": "RAL 5025",
+    "description": "A gentian pearl blue that shimmers with calm elegance."
+  },
+  {
+    "name": "Pearl night blue",
+    "color": "#1b2f52",
+    "id": "RAL 5026",
+    "description": "A night blue pearl that glows with starry sophistication."
+  },
+  {
+    "name": "Leaf green",
+    "color": "#2d5a27",
+    "id": "RAL 6002",
+    "description": "A leafy green that brings lush, natural vitality indoors."
+  },
+  {
+    "name": "Olive green",
+    "color": "#4e533b",
+    "id": "RAL 6003",
+    "description": "A classic olive green that adds earthy calm to decor."
+  },
+  {
+    "name": "Blue green",
+    "color": "#084442",
+    "id": "RAL 6004",
+    "description": "A blue-green mix that refreshes with cool, aquatic tones."
+  },
+  {
+    "name": "Bottle green",
+    "color": "#2a3222",
+    "id": "RAL 6007",
+    "description": "A deep bottle green that cloaks spaces in rich mystery."
+  },
+  {
+    "name": "Brown green",
+    "color": "#36342a",
+    "id": "RAL 6008",
+    "description": "A brown-green blend that grounds rooms with natural depth."
+  },
+  {
+    "name": "Fir green",
+    "color": "#27362a",
+    "id": "RAL 6009",
+    "description": "A fir-inspired green that evokes evergreen forest calm."
+  },
+  {
+    "name": "Black green",
+    "color": "#303d3a",
+    "id": "RAL 6012",
+    "description": "A dark black-green that adds a bold, natural edge."
+  },
+  {
+    "name": "Reed green",
+    "color": "#7a765a",
+    "id": "RAL 6013",
+    "description": "A soft reed green that calms with its earthy subtlety."
+  },
+  {
+    "name": "Yellow olive",
+    "color": "#464135",
+    "id": "RAL 6014",
+    "description": "A yellow-olive mix that blends warmth with natural tones."
+  },
+  {
+    "name": "May green",
+    "color": "#53803f",
+    "id": "RAL 6017",
+    "description": "A fresh May green that bursts with springtime vibrance."
+  },
+  {
+    "name": "Yellow green",
+    "color": "#599a39",
+    "id": "RAL 6018",
+    "description": "A lively yellow-green that energizes with sunny freshness."
+  },
+  {
+    "name": "Pastel green",
+    "color": "#b7ceac",
+    "id": "RAL 6019",
+    "description": "A gentle pastel green that softens spaces with calm elegance."
+  },
+  {
+    "name": "Orient red",
+    "color": "#a43338",
+    "id": "RAL 3031",
+    "description": "An exotic orient red that warms with vibrant, spicy tones."
+  },
+  {
+    "name": "Pearl ruby red",
+    "color": "#6e1c24",
+    "id": "RAL 3032",
+    "description": "A ruby pearl red that shimmers with deep, luxurious charm."
+  },
+  {
+    "name": "Pearl pink",
+    "color": "#a2392e",
+    "id": "RAL 3033",
+    "description": "A pearly pink that glows with soft, romantic warmth."
+  },
+  {
+    "name": "Heather violet",
+    "color": "#c4608c",
+    "id": "RAL 4003",
+    "description": "A heather violet that blooms with gentle, floral vibrance."
+  },
+  {
+    "name": "Claret violet",
+    "color": "#641d39",
+    "id": "RAL 4004",
+    "description": "A rich claret violet that envelops spaces in regal depth."
+  },
+  {
+    "name": "Blue lilac",
+    "color": "#7b679a",
+    "id": "RAL 4005",
+    "description": "A blue-lilac blend that calms with its soft, pastel charm."
+  },
+  {
+    "name": "Signal violet",
+    "color": "#874b83",
+    "id": "RAL 4008",
+    "description": "A striking signal violet that energizes with bold elegance."
+  },
+  {
+    "name": "Pastel violet",
+    "color": "#9d8592",
+    "id": "RAL 4009",
+    "description": "A subtle pastel violet that softens rooms with calm grace."
+  },
+  {
+    "name": "Telemagenta",
+    "color": "#bb3e77",
+    "id": "RAL 4010",
+    "description": "A vivid telemagenta that pops with playful, vibrant energy."
+  },
+  {
+    "name": "Violet blue",
+    "color": "#384e6f",
+    "id": "RAL 5000",
+    "description": "A violet-blue mix that cools spaces with serene depth."
+  },
+  {
+    "name": "Green blue",
+    "color": "#1d4c64",
+    "id": "RAL 5001",
+    "description": "A green-blue hybrid that refreshes with aquatic calm."
+  },
+  {
+    "name": "Ultramarine blue",
+    "color": "#1e367b",
+    "id": "RAL 5002",
+    "description": "A deep ultramarine blue that evokes oceanic richness."
+  },
+  {
+    "name": "Signal blue",
+    "color": "#005187",
+    "id": "RAL 5005",
+    "description": "A bold signal blue that directs with vibrant coolness."
+  },
+  {
+    "name": "Brilliant blue",
+    "color": "#426a8c",
+    "id": "RAL 5007",
+    "description": "A brilliant blue that shines with clear, refreshing tones."
+  },
+  {
+    "name": "Grey blue",
+    "color": "#2d3a44",
+    "id": "RAL 5008",
+    "description": "A grey-blue blend that calms with muted sophistication."
+  },
+  {
+    "name": "Steel blue",
+    "color": "#1e2b3d",
+    "id": "RAL 5011",
+    "description": "A steely blue that adds strength and cool elegance."
+  },
+  {
+    "name": "Light blue",
+    "color": "#2e88b6",
+    "id": "RAL 5012",
+    "description": "A light blue that lifts spaces with airy freshness."
+  },
+  {
+    "name": "Cobalt blue",
+    "color": "#223053",
+    "id": "RAL 5013",
+    "description": "A rich cobalt blue that deepens rooms with calm intensity."
+  },
+  {
+    "name": "Opal green",
+    "color": "#005f4e",
+    "id": "RAL 6026",
+    "description": "An opal green that shimmers with cool, natural depth."
+  },
+  {
+    "name": "Light green",
+    "color": "#80bab5",
+    "id": "RAL 6027",
+    "description": "A light green that refreshes with gentle, airy tones."
+  },
+  {
+    "name": "Pine green",
+    "color": "#305442",
+    "id": "RAL 6028",
+    "description": "A pine green that evokes evergreen forest serenity."
+  },
+  {
+    "name": "Mint turquoise",
+    "color": "#48877f",
+    "id": "RAL 6033",
+    "description": "A minty turquoise that cools spaces with fresh charm."
+  },
+  {
+    "name": "Pearl green",
+    "color": "#134d24",
+    "id": "RAL 6035",
+    "description": "A pearly green that glows with rich, natural elegance."
+  },
+  {
+    "name": "Luminous green",
+    "color": "#00b612",
+    "id": "RAL 6038",
+    "description": "A luminous green that radiates with vivid, electric energy."
+  },
+  {
+    "name": "Squirrel grey",
+    "color": "#7b888e",
+    "id": "RAL 7000",
+    "description": "A squirrel grey that adds a soft, neutral woodland feel."
+  },
+  {
+    "name": "Silver grey",
+    "color": "#8e969d",
+    "id": "RAL 7001",
+    "description": "A silver-grey hue that shines with sleek, modern calm."
+  },
+  {
+    "name": "Signal grey",
+    "color": "#9b9b9b",
+    "id": "RAL 7004",
+    "description": "A practical signal grey that balances utility with style."
+  },
+  {
+    "name": "Mouse grey",
+    "color": "#6b6e6b",
+    "id": "RAL 7005",
+    "description": "A muted mouse grey that soothes with understated depth."
+  },
+  {
+    "name": "Beige grey",
+    "color": "#756a5e",
+    "id": "RAL 7006",
+    "description": "A beige-grey mix that warms spaces with neutral charm."
+  },
+  {
+    "name": "Tarpaulin grey",
+    "color": "#585c56",
+    "id": "RAL 7010",
+    "description": "A rugged tarpaulin grey that adds practical toughness."
+  },
+  {
+    "name": "Iron grey",
+    "color": "#53595d",
+    "id": "RAL 7011",
+    "description": "An iron grey that strengthens rooms with metallic depth."
+  },
+  {
+    "name": "Basalt grey",
+    "color": "#585d5e",
+    "id": "RAL 7012",
+    "description": "A basalt grey that grounds spaces with stone-like calm."
+  },
+  {
+    "name": "Anthracite grey",
+    "color": "#383e42",
+    "id": "RAL 7016",
+    "description": "A dark anthracite grey that adds sleek, modern intensity."
+  },
+  {
+    "name": "Black grey",
+    "color": "#303234",
+    "id": "RAL 7021",
+    "description": "A black-grey blend that cloaks rooms in subtle elegance."
+  },
+  {
+    "name": "Umbra grey",
+    "color": "#4c4a44",
+    "id": "RAL 7022",
+    "description": "An umbra grey that shadows spaces with quiet depth."
+  },
+  {
+    "name": "Mint green",
+    "color": "#00703c",
+    "id": "RAL 6029",
+    "description": "A cool mint green that refreshes with crisp, clean tones."
+  },
+  {
+    "name": "Signal green",
+    "color": "#1c8051",
+    "id": "RAL 6032",
+    "description": "A bold signal green that energizes with vivid clarity."
+  },
+  {
+    "name": "Yellow grey",
+    "color": "#90886f",
+    "id": "RAL 7034",
+    "description": "A yellow-grey mix that softens spaces with earthy warmth."
+  },
+  {
+    "name": "Pearl opal green",
+    "color": "#07584b",
+    "id": "RAL 6036",
+    "description": "An opal green pearl that shimmers with cool elegance."
+  },
+  {
+    "name": "Pure green",
+    "color": "#008c27",
+    "id": "RAL 6037",
+    "description": "A pure green that bursts with fresh, natural vibrance."
+  },
+  {
+    "name": "Quartz grey",
+    "color": "#6a665e",
+    "id": "RAL 7039",
+    "description": "A quartz grey that calms with its stony, neutral tone."
+  },
+  {
+    "name": "Olive grey",
+    "color": "#7f7863",
+    "id": "RAL 7002",
+    "description": "An olive-grey blend that adds muted, natural depth."
+  },
+  {
+    "name": "Moss grey",
+    "color": "#787769",
+    "id": "RAL 7003",
+    "description": "A mossy grey that soothes with its earthy subtlety."
+  },
+  {
+    "name": "Tele grey 1",
+    "color": "#8e9295",
+    "id": "RAL 7045",
+    "description": "A light tele grey that lifts spaces with modern calm."
+  },
+  {
+    "name": "Khaki grey",
+    "color": "#725f3c",
+    "id": "RAL 7008",
+    "description": "A khaki grey that blends rugged warmth with neutrality."
+  },
+  {
+    "name": "Green grey",
+    "color": "#5c6058",
+    "id": "RAL 7009",
+    "description": "A green-grey mix that calms with its natural tone."
+  },
+  {
+    "name": "Ochre brown",
+    "color": "#99632b",
+    "id": "RAL 8001",
+    "description": "An ochre brown that warms with its rich, earthy hue."
+  },
+  {
+    "name": "Brown grey",
+    "color": "#565044",
+    "id": "RAL 7013",
+    "description": "A brown-grey blend that grounds spaces with subtle depth."
+  },
+  {
+    "name": "Slate grey",
+    "color": "#505359",
+    "id": "RAL 7015",
+    "description": "A slate grey that adds a cool, stone-like calm."
+  },
+  {
+    "name": "Olive brown",
+    "color": "#6f4a25",
+    "id": "RAL 8008",
+    "description": "An olive-brown mix that warms with natural richness."
+  },
+  {
+    "name": "Concrete grey",
+    "color": "#7f8076",
+    "id": "RAL 7023",
+    "description": "A concrete grey that adds sturdy, neutral strength."
+  },
+  {
+    "name": "Graphite grey",
+    "color": "#46494f",
+    "id": "RAL 7024",
+    "description": "A graphite grey that deepens spaces with sleek elegance."
+  },
+  {
+    "name": "Mahogany brown",
+    "color": "#4b2b20",
+    "id": "RAL 8016",
+    "description": "A dark mahogany brown that enriches with luxurious depth."
+  }
+]

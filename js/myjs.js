@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const follower = document.querySelector(".cursor-follower");
   const contentWrapper = document.querySelector(".content-wrapper");
-  const snapSection = document.querySelector(".snap-section");
   const heroSection = document.querySelector(".hero-section");
   const navbar = document.querySelector(".navbar");
   const sliderWrapper = document.querySelector(".slider-wrapper");
@@ -18,13 +17,21 @@ document.addEventListener("DOMContentLoaded", () => {
   let velocityInner = 0;
   let velocityOuter = 0;
   let timeoutId = null;
-  let hasSnappedDown = false;
   let lastScrollPosition = 0;
   let currentSlide = 0;
-  const totalCards = 13; // Total number of slider items
-  const itemWidth = 250; // Fixed width of each slider item in pixels (from your CSS)
+  const totalCards = 12;
+  const itemWidth = 250;
 
-  // Set initial navbar state (visible at top)
+  // Explicitly set scroll restoration to auto
+  if ("scrollRestoration" in history) {
+    history.scrollRestoration = "auto";
+    console.log("Scroll restoration set to:", history.scrollRestoration);
+  }
+
+  // Log initial scroll position
+  console.log("Initial scrollY on DOMContentLoaded:", window.scrollY);
+
+  // Set initial navbar state
   navbar.classList.add("visible");
 
   // Mouse movement handler
@@ -50,67 +57,36 @@ document.addEventListener("DOMContentLoaded", () => {
     updateCursorDisplay(isInNavbar);
   });
 
-  // Scroll handler with debouncing
+  // Scroll handler for navbar visibility only
   let scrollTimeout;
   window.addEventListener("scroll", () => {
     clearTimeout(scrollTimeout);
     scrollTimeout = setTimeout(() => {
-      const snapSectionTop = snapSection.getBoundingClientRect().top;
       const heroSectionTop = heroSection.getBoundingClientRect().top;
       const heroSectionBottom = heroSectionTop + heroSection.offsetHeight;
       const scrollPosition = window.scrollY;
-      const scrollingUp = scrollPosition < lastScrollPosition;
 
-      if (scrollPosition === 0) {
-        hasSnappedDown = false;
-        document.body.style.scrollSnapType = "y mandatory";
-      }
-
-      if (
-        !hasSnappedDown &&
-        scrollPosition > 0 &&
-        snapSectionTop <= window.innerHeight
-      ) {
-        window.scrollTo({
-          top: snapSection.offsetTop,
-          behavior: "smooth",
-        });
-        hasSnappedDown = true;
-      }
-
-      if (
-        hasSnappedDown &&
-        !scrollingUp &&
-        scrollPosition >= snapSection.offsetTop
-      ) {
-        document.body.style.scrollSnapType = "none";
-      }
+      console.log("Scroll event - scrollY:", scrollPosition);
 
       const isHeroVisible = heroSectionBottom > 0;
       navbar.classList.toggle("white-bg", !isHeroVisible);
 
       const isAtTop = scrollPosition === 0;
-      const isInSnapSection =
-        snapSectionTop <= 0 && snapSectionTop + snapSection.offsetHeight > 0;
-      navbar.classList.toggle("visible", isAtTop || isInSnapSection);
-
       const isOutsideHero = heroSectionTop + heroSection.offsetHeight <= 0;
-      updateCursorDisplay(isOutsideHero);
+      navbar.classList.toggle("visible", isAtTop || isOutsideHero);
 
+      updateCursorDisplay(isOutsideHero);
       lastScrollPosition = scrollPosition;
     }, 50);
   });
 
   // Slider navigation
   function updateSlider() {
-    const cardWidth = itemWidth; // Use fixed item width (250px)
+    const cardWidth = itemWidth;
     const translateX = -currentSlide * cardWidth;
     sliderWrapper.style.transform = `translateX(${translateX}px)`;
-
-    // Set slider-wrapper width based on total cards
     sliderWrapper.style.width = `${totalCards * cardWidth}px`;
 
-    // Dynamically calculate visible cards and maxSlide
     const viewportWidth = window.innerWidth;
     const visibleCards = Math.floor(viewportWidth / cardWidth);
     const maxSlide = Math.max(0, totalCards - visibleCards);
@@ -119,7 +95,6 @@ document.addEventListener("DOMContentLoaded", () => {
     nextButton.classList.toggle("disabled", currentSlide >= maxSlide);
   }
 
-  // Button click handlers
   function goToPrevSlide() {
     const viewportWidth = window.innerWidth;
     const visibleCards = Math.floor(viewportWidth / itemWidth);
@@ -143,31 +118,20 @@ document.addEventListener("DOMContentLoaded", () => {
   prevButton.addEventListener("click", goToPrevSlide);
   nextButton.addEventListener("click", goToNextSlide);
 
-  // Wheel event with debounce, only for horizontal scroll
   let wheelTimeout = null;
   sliderWrapper.addEventListener("wheel", (e) => {
     if (e.deltaX !== 0) {
       e.preventDefault();
-
       if (wheelTimeout) return;
-
-      if (e.deltaX > 0) {
-        goToNextSlide(); // Swipe left
-      } else if (e.deltaX < 0) {
-        goToPrevSlide(); // Swipe right
-      }
-
-      wheelTimeout = setTimeout(() => {
-        wheelTimeout = null;
-      }, 1000);
+      if (e.deltaX > 0) goToNextSlide();
+      else if (e.deltaX < 0) goToPrevSlide();
+      wheelTimeout = setTimeout(() => (wheelTimeout = null), 1000);
     }
   });
 
-  // Initial slider setup and resize handler
   updateSlider();
-  window.addEventListener("resize", updateSlider); // Update on resize
+  window.addEventListener("resize", updateSlider);
 
-  // Function to update cursor-follower display
   function updateCursorDisplay(condition) {
     const navbarRect = navbar.getBoundingClientRect();
     const isInNavbar =
@@ -178,14 +142,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const isOutsideHero =
       heroSection.getBoundingClientRect().top + heroSection.offsetHeight <= 0;
 
-    if (isInNavbar || isOutsideHero) {
-      follower.style.display = "none";
-    } else {
-      follower.style.display = "block";
-    }
+    follower.style.display = isInNavbar || isOutsideHero ? "none" : "block";
   }
 
-  // Animation loop
   function animate() {
     followX += (mouseX - followX) * 0.1;
     followY += (mouseY - followY) * 0.1;
@@ -213,4 +172,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   animate();
+});
+
+// Log scroll position after full load
+window.addEventListener("load", () => {
+  console.log("ScrollY after full load:", window.scrollY);
 });
