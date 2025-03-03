@@ -950,3 +950,453 @@ body {
     font-weight: 500;
     font-size: 16px;
 }
+
+.paint-calculator-section{
+    /* min-height: 100vh; */
+    width: 100%;
+}
+.desc-container{
+    background-image: url('../assets/images/paint-calculator1.jpg');
+    min-height: 60vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+.desc-container .info{
+    padding: 35px;
+    background-color: #e5ecf1ea;
+    border-radius: 8px;
+    max-width: 400px;
+}
+.desc-container .info h3{
+    color:#4177be;
+}
+@media (min-width: 768px) {
+    .desc-container{
+       min-height: 100vh;
+    }
+}
+.calc-container{
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+@media (min-width: 768px) {
+    .calc-container{
+        min-height: 100vh;
+
+    }
+}
+
+/* Paint Calculator Section */
+
+
+.calculator-app {
+    background: #f8f8f8;
+    padding: 30px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.paint-calculator-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#wallsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wall-section {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    position: relative;
+    border: 1px solid #e5e5e5;
+}
+
+.wall-section h4 {
+    font-size: 18px;
+    margin: 0 0 10px;
+    color: #366caa;
+}
+
+.remove-wall-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.remove-wall-button:hover {
+    background: #cc0000;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 35px;
+}
+
+
+
+/* Paint Calculator Sliders */
+.form-group input[type="range"] {
+    -webkit-appearance: none; /* Remove default styling */
+    appearance: none;
+    width: 100%;
+    height: 8px; /* Track height */
+    background: #e0e0e0; /* Base track color */
+    border-radius: 5px; /* Rounded track */
+    outline: none; /* Remove focus outline */
+    transition: background 0.3s ease;
+}
+
+/* Track (Webkit - Chrome, Safari, Edge) */
+.form-group input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 30px;
+    background-color: #dee5e9; /* Gradient track */
+    border-radius: 5px;
+}
+
+/* Track (Mozilla - Firefox) */
+.form-group input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 30px;
+    background-color: #dee5e9;
+    border-radius: 5px;
+}
+
+/* Thumb (Webkit) */
+.form-group input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px; /* Larger thumb */
+    height: 50px;
+    background: #366caa; /* Brand blue */
+    border-radius: 10px; /* Circular */
+    border: 2px solid #fff; /* White border for contrast */
+    cursor: pointer;
+    margin-top: -10px; /* Center thumb on track (8px track - 20px thumb / 2) */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+/* Thumb (Mozilla) */
+.form-group input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 50px;
+    background: #366caa;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+/* Thumb Hover Effects */
+.form-group input[type="range"]::-webkit-slider-thumb:hover,
+.form-group input[type="range"]::-moz-range-thumb:hover {
+    transform: scale(1.1); /* Slight scale-up */
+    background: #2a5485; /* Darker blue on hover */
+}
+
+/* Focus Styles (for accessibility) */
+.form-group input[type="range"]:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 0 3px rgba(54, 108, 170, 0.3); /* Focus ring */
+}
+.form-group input[type="range"]:focus::-moz-range-thumb {
+    box-shadow: 0 0 0 3px rgba(54, 108, 170, 0.3);
+}
+
+/* Ensure labels don’t overlap */
+.form-group label {
+    font-size: 16px;
+    color: #101010;
+    margin-bottom: 15px; /* Space above slider */
+}
+
+.units-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #101010;
+}
+
+.wastage-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
+    padding-left: 20px;
+ 
+}
+.wastage-group label {
+   margin: 0;
+ 
+}
+
+.results {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.results p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #101010;
+}
+
+.results span {
+    font-weight: 700;
+    color: #366caa;
+}
+
+.paint-suggestion{
+    background-color: white;
+}
+.paint-suggestion img{
+    height: 150px;
+}
+
+.add-wall-button{
+    color: #366caa;
+    width: 130px;
+    background-color: transparent;
+    border: none;
+    padding: 10px 10px; 
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-wall-button:hover{
+    background-color: transparent !important;
+}
+
+.reset-button {
+    color: #366caa;;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.reset-button:hover {
+    color: white;
+
+}
+
+.add-wall-button:hover, .reset-button:hover {
+    background-color: #2a5485;
+}
+
+
+.paint-card {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    min-height: 400px;
+
+    padding:70px 20px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+.paint-image img{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+.paint-image-desc{
+    text-align: left;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.paint-image-desc h3{
+   color: #3c75b6;
+}
+.paint-image-desc li{
+    font-weight: 300;
+}
+.paint-image-desc .view-color{
+    text-decoration: none;
+}
+
+
+
+/* Contact Section */
+.contact-section {
+    min-height: 100vh;
+    padding: 70px 0;
+    background-color: white;
+}
+.contact-section .contact-info h3{
+    color: #366caa;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.contact-info {
+    padding: 20px;
+    
+}
+
+.contact-info h2 {
+    font-size: 36px;
+    color: #101010;
+    margin-bottom: 20px;
+}
+
+.contact-info p.light {
+    font-size: 16px;
+    color: #9c9c9c;
+    margin-bottom: 30px;
+}
+
+.contact-details-container{
+  padding: 50px;
+}
+.contact-detail {
+    margin-bottom: 20px;
+}
+
+.contact-detail h4 {
+    font-size: 18px;
+    color: #366caa;
+    margin-bottom: 5px;
+}
+
+.contact-detail p {
+    font-size: 14px;
+    color: #101010;
+    margin: 0;
+}
+
+.contact-detail a {
+    color: #101010;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-detail a:hover {
+    color: #366caa;
+}
+
+.contact-map {
+    margin-top: 30px;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container {
+    padding: 20px;
+}
+
+.contact-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    /* max-width: 500px; */
+    margin: 0 auto;
+}
+
+.contact-form h3{
+    color: #366caa;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    font-size: 16px;
+    color: #101010;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #101010;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-form .submit-button {
+    background-color: #366caa;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .submit-button:hover {
+    background-color: #2a5485;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .contact-section .row {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .contact-info,
+    .contact-form-container {
+        text-align: center;
+    }
+}
