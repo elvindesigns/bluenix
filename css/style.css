@@ -121,12 +121,42 @@ body {
     color: rgb(138, 136, 136);
     font-size: 1rem;
     margin-top: 15px;
+    
 }
+.values li {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Aligns marker and text at the top */
+    min-height: 70px;
+}
+
+.values .marker {
+    background-color: #3c75b6;
+    margin-right: 20px;
+    padding: 5px 0 0 0; /* Simplified padding: top-only */
+    font-size: 20px;
+    color: white;
+    width: 40px; /* Fixed width */
+    height: 40px;
+    text-align: center;
+    flex-shrink: 0; /* Prevents shrinking */
+    flex-grow: 0; /* Prevents growing */
+    display: flex; /* Use flex to center text inside */
+    justify-content: center; /* Horizontally center text */
+    align-items: center; /* Vertically center text */
+    box-sizing: border-box; /* Includes padding in width/height */
+    border-radius: 5px
+}
+
+
+
 
 .intro-image {
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 10px;
 }
 
 /* Responsive Adjustments */
@@ -340,7 +370,7 @@ body {
 /* Style nav-links */
 .nav-link {
     color: rgb(53, 70, 128) !important;
-    font-size: 1.0rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: color 0.3s ease;
