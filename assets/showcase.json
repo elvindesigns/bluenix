@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Lunch hosting with the Painters guild of Nigeria",
+    "description": "Exclusive lunch with the Painters Guild of Nigeria  and few other prominent painters at the factory, showcasing the latest trends and techniques in interior painting.",
+    "images": [
+      {
+        "src": "assets/images/showcase/01.jpg",
+        "alt": ""
+      },
+      {
+        "src": "assets/images/showcase/02.jpg",
+        "alt": ""
+      },
+      {
+        "src": "assets/images/showcase/03.jpg",
+        "alt": ""
+      },
+      { "src": "assets/images/showcase/04.jpg", "alt": "" },
+      { "src": "assets/images/showcase/05.jpg", "alt": "" },
+      { "src": "assets/images/showcase/06.jpg", "alt": "" },
+      { "src": "assets/images/showcase/07.jpg", "alt": "" },
+      { "src": "assets/images/showcase/08.jpg", "alt": "" },
+      { "src": "assets/images/showcase/09.jpg", "alt": "" }
+    ]
+  },
+  {
+    "title": "Bluenix paints",
+    "description": "Some images from the Bluenix paints factory.",
+    "images": [
+      {
+        "src": "assets/images/showcase/10.jpg",
+        "alt": ""
+      },
+      {
+        "src": "assets/images/showcase/11.jpg",
+        "alt": ""
+      },
+      {
+        "src": "assets/images/showcase/12.jpg",
+        "alt": ""
+      },
+      { "src": "assets/images/showcase/13.jpg", "alt": "" },
+      { "src": "assets/images/showcase/14.jpg", "alt": "" },
+      { "src": "assets/images/showcase/15.jpg", "alt": "" },
+      { "src": "assets/images/showcase/16.jpg", "alt": "" },
+      { "src": "assets/images/showcase/17.jpg", "alt": "" },
+      { "src": "assets/images/showcase/18.jpg", "alt": "" }
+    ]
+  }
+]
