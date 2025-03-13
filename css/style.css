@@ -1315,6 +1315,7 @@ body {
 }
 .paint-image-desc .view-color{
     text-decoration: none;
+    margin-right: 20px;
 }
 
 
@@ -1657,4 +1658,124 @@ body {
 
 .showcase-full-section .gallery-grid img {
     height: 200px; /* Slightly taller for full view */
+}
+
+
+
+/* Modal Styles */
+.modal-product {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content-product {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px 30px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: slideIn 0.3s ease-in-out;
+}
+
+.close-btn-product {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-btn-product:hover,
+.close-btn-product:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+#modal-title-product {
+    color: #366caa;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#modal-specs-product {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#modal-specs-product li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    color: #555;
+}
+
+#modal-specs-product li:last-child {
+    border-bottom: none;
+}
+
+#modal-specs-product li strong {
+    color: #333;
+    margin-right: 5px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { 
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to { 
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .modal-content-product {
+        width: 95%;
+        margin: 15% auto;
+        padding: 15px 20px;
+    }
+
+    #modal-title-product {
+        font-size: 20px;
+    }
+
+    #modal-specs-product li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content-product {
+        padding: 10px 15px;
+    }
+
+    #modal-title-product {
+        font-size: 18px;
+    }
+
+    .close-btn-product {
+        font-size: 24px;
+    }
 }

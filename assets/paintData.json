@@ -1,0 +1,100 @@
+{
+  "paints": {
+    "emulsion": {
+      "name": "Standard Emulsion Paint",
+      "specifications": [
+        {
+          "label": "Color Strength",
+          "value": "High color strength with a minimum of 80% pigment load"
+        },
+        {
+          "label": "Lightfastness",
+          "value": "Excellent lightfastness with a rating of 8-9 on the Blue Wool Scale."
+        },
+        {
+          "label": "Viscosity",
+          "value": "1000 - 1500 cps (centipoise) at 25°C"
+        },
+        { "label": "pH Level", "value": "Neutral pH between 7-9." },
+        { "label": "Binder", "value": "High-quality acrylic polymer." },
+        {
+          "label": "Solvents",
+          "value": "Water-based with minimal VOCs (Volatile Organic Compounds)."
+        },
+        {
+          "label": "Adhesion",
+          "value": "Excellent adhesion to various surfaces, including paper, board and fabric."
+        },
+        {
+          "label": "Drying Time",
+          "value": "Surface dry 10 minutes, Full dry 1 hour"
+        }
+      ]
+    },
+    "matt": {
+      "name": "Matt Emulsion Paint",
+      "specifications": [
+        {
+          "label": "Color Accuracy",
+          "value": "High color accuracy with a Delta E of ≤ 2."
+        },
+        {
+          "label": "Color Consistency",
+          "value": "Excellent color consistency across batches."
+        },
+        {
+          "label": "Lightfastness",
+          "value": "Good lightfastness with a rating of 6-7 on the Blue Wool Scale."
+        },
+        {
+          "label": "Viscosity",
+          "value": "500 - 1000 cps (centipoise) at 25°C"
+        },
+        { "label": "pH Level", "value": "Slightly alkaline pH between 8-10." },
+        { "label": "Binder", "value": "High-quality polyurethane polymer." },
+        {
+          "label": "Solvents",
+          "value": "Water-based with minimal VOCs (Volatile Organic Compounds)."
+        },
+        {
+          "label": "Drying Time",
+          "value": "Surface dry 30 minutes, Full dry 2 hour"
+        }
+      ]
+    },
+    "silk": {
+      "name": "Silk | Satin Paint",
+      "specifications": [
+        {
+          "label": "Color Strength",
+          "value": "High color strength with a minimum of 80% pigment load"
+        },
+        {
+          "label": "Lightfastness",
+          "value": "Excellent lightfastness with a rating of 8-9 on the Blue Wool Scale."
+        },
+        {
+          "label": "Transparency",
+          "value": "High transparency with a minimum of 90% light transmission."
+        },
+        {
+          "label": "Viscosity",
+          "value": "100 - 500 cps (centipoise) at 25°C"
+        },
+        { "label": "pH Level", "value": "Neutral pH between 7-9." },
+        {
+          "label": "Binder",
+          "value": "High-quality gum arabic or acrylic polymer."
+        },
+        {
+          "label": "Solvents",
+          "value": "Water-based with minimal VOCs (Volatile Organic Compounds)."
+        },
+        {
+          "label": "Drying Time",
+          "value": "Surface dry 5 minutes, Full dry 1 hour"
+        }
+      ]
+    }
+  }
+}
